@@ -109,7 +109,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.40</version>
+            <version>8.0.22</version>
         </dependency>
 
         <dependency>
@@ -150,6 +150,9 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>9.4.0.v20161208</version>
                 <configuration>
+                <httpConnector>
+                	<port>8090</port>
+                </httpConnector>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                 </configuration>
             </plugin>
